@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { LiderPageRoutingModule } from './lider-routing.module';
 
 import { LiderPage } from './lider.page';
+import { LiderFormPageModule } from './lider-form/lider-form/lider-form.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { LiderPage } from './lider.page';
     FormsModule,
     IonicModule,
     LiderPageRoutingModule,
-    HeaderPageModule
+    HeaderPageModule,
+    LiderFormPageModule
   ],
   declarations: [LiderPage]
 })

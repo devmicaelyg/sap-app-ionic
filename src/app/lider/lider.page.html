@@ -1,1 +1,38 @@
 <app-header title="Lideres"></app-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Mosquito Voador</ion-card-title>
+
+            <div>
+                <ion-icon name="create-outline"></ion-icon>
+                <ion-icon name="trash-outline"></ion-icon>
+            </div>
+        </ion-card-header>
+
+        <ion-card-content>
+
+            <ion-list>
+                <ion-item>
+                    Nome do lider: Mosquito voador
+                </ion-item>
+                <ion-item>
+                    Contato do lider: mosquitovoador@basis.com
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+    <!-- <div class="no-lider" class="align-center">
+      <ion-text>
+        Nenhum lider cadastrado.
+      </ion-text>
+    </div> -->
+
+
+
+    <ion-button class="ion-padding" color="dark" expand="block" fill="outline" (click)="presentModal()">
+        <strong>Adicionar Lider</strong>
+    </ion-button>
+
+</ion-content>

@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: LiderPage
+  },
+  {
+    path: 'lider-form',
+    loadChildren: () => import('./lider-form/lider-form/lider-form.module').then( m => m.LiderFormPageModule)
   }
 ];
 
