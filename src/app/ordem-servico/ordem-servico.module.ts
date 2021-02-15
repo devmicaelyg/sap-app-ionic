@@ -8,6 +8,7 @@ import { IonicModule } from '@ionic/angular';
 import { OrdemServicoPageRoutingModule } from './ordem-servico-routing.module';
 
 import { OrdemServicoPage } from './ordem-servico.page';
+import { OsFormPage } from './os-form/os-form.page';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { OrdemServicoPage } from './ordem-servico.page';
     OrdemServicoPageRoutingModule,
     HeaderPageModule
   ],
-  declarations: [OrdemServicoPage]
+  declarations: [OrdemServicoPage, OsFormPage]
 })
 export class OrdemServicoPageModule {}

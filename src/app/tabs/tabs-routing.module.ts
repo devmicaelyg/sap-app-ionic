@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { OsFormPage } from '../ordem-servico/os-form/os-form.page';
+import { ProjetoFormPage } from '../projeto/projeto-form/projeto-form.page';
 import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
@@ -20,8 +22,16 @@ const routes: Routes = [
         loadChildren: () => import('../projeto/projeto.module').then(m => m.ProjetoPageModule)
       },
       {
+        path: 'projeto-novo',
+        component: ProjetoFormPage
+      },
+      {
         path: 'ordem-servico',
         loadChildren: () => import('../ordem-servico/ordem-servico.module').then(m => m.OrdemServicoPageModule)
+      },
+      {
+        path: 'ordem-servico-novo',
+        component: OsFormPage
       },
       {
         path: 'login',

@@ -5,22 +5,21 @@
 <ion-content>
     <ion-card>
         <ion-card-header>
-            <ion-card-title>Mosquito Voador</ion-card-title>
-
-            <div>
-                <ion-icon name="create-outline"></ion-icon>
-                <ion-icon name="trash-outline"></ion-icon>
-            </div>
+            <ion-card-title>Mosquito Voador
+                <div class="acoes">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                </div>
+            </ion-card-title>
         </ion-card-header>
 
         <ion-card-content>
-
-            <ion-list>
+            <ion-list lines="none">
                 <ion-item>
-                    Nome do lider: Mosquito voador
+                    <span>Nome: </span> Mosquito voador
                 </ion-item>
                 <ion-item>
-                    Contato do lider: mosquitovoador@basis.com
+                    <span>Contato: </span> mosquitovoador@basis.com
                 </ion-item>
             </ion-list>
         </ion-card-content>
@@ -30,8 +29,6 @@
         Nenhum lider cadastrado.
       </ion-text>
     </div> -->
-
-
 
     <ion-button class="ion-padding" color="dark" expand="block" fill="outline" (click)="presentModal()">
         <strong>Adicionar Lider</strong>

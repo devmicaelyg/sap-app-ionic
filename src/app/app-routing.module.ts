@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: () => import('./lider/lider.module').then( m => m.LiderPageModule)
   },
   {
+    path: 'lider-form',
+    loadChildren: () => import('./lider/lider-form/lider-form/lider-form.module').then( m => m.LiderFormPageModule)
+  },
+  {
     path: 'projeto',
     loadChildren: () => import('./projeto/projeto.module').then( m => m.ProjetoPageModule)
   },

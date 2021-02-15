@@ -32,6 +32,7 @@
             ion-title {
                 padding: 10px;
                 font-size: 28px;
+                word-wrap: break-word;
             }
         }
     }
@@ -40,3 +41,31 @@
         background: #3E464C;
         height: 8vh;
     }
+
+
+    ion-content{
+        ion-card{
+            ion-card-title{
+                margin-left: -10px;
+
+                .acoes{ 
+                    float: right;
+                    padding-left: 30px;
+                }
+
+            }
+
+            ion-card-content{
+                margin-left: -27px;
+                ion-list{
+                    ion-item{
+                        span{
+                            font-weight: bolder;
+                            padding: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  

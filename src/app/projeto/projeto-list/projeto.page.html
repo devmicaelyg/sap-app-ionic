@@ -1,0 +1,49 @@
+<app-header title="Projetos"></app-header>
+
+<ion-content>
+  <ion-card>
+      <ion-card-header>
+          <ion-card-title>CUP
+              <div class="acoes">
+                  <ion-icon name="create-outline"></ion-icon>
+                  <ion-icon name="trash-outline"></ion-icon>
+              </div>
+          </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+          <ion-list lines="none">
+              <ion-item>
+                  <span>Nome: </span> Mosquito voador
+              </ion-item>
+              <ion-item>
+                  <span>Testador: </span> Natalia Barcelos 
+              </ion-item>
+              <ion-item>
+                <span>Revisor: </span> Flaviane 157
+            </ion-item>
+            <ion-item>
+              <span>Gerente: </span> Eduardo
+          </ion-item>
+          <ion-item>
+            <span>Lider: </span> Bruno Enjoado 
+        </ion-item>
+        <ion-item>
+          <span>Cliente: </span> Ancine
+      </ion-item>
+          
+
+          </ion-list>
+      </ion-card-content>
+  </ion-card>
+  <!-- <div class="no-lider" class="align-center">
+    <ion-text>
+      Nenhum lider cadastrado.
+    </ion-text>
+  </div> -->
+
+  <ion-button class="ion-padding" color="dark" expand="block" fill="outline" (click)="cadastrarProjeto()">
+      <strong>Adicionar Projeto</strong>
+  </ion-button>
+
+</ion-content>

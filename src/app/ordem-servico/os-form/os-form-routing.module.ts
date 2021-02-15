@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProjetoFormPage } from './projeto-form/projeto-form.page';
-import { ProjetoPage } from './projeto-list/projeto.page';
 
+import { OsFormPage } from './os-form.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ProjetoPage
+    component: OsFormPage
   }
 ];
 
@@ -15,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ProjetoPageRoutingModule {}
+export class OsFormPageRoutingModule {}

@@ -1,22 +1,24 @@
 import { HeaderPageModule } from './../components/header/header.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
 import { ProjetoPageRoutingModule } from './projeto-routing.module';
 
-import { ProjetoPage } from './projeto.page';
+import { ProjetoFormPage } from './projeto-form/projeto-form.page';
+import { ProjetoPage } from './projeto-list/projeto.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ReactiveFormsModule,
     ProjetoPageRoutingModule,
     HeaderPageModule
   ],
-  declarations: [ProjetoPage]
+  declarations: [ProjetoPage, ProjetoFormPage]
 })
 export class ProjetoPageModule {}
